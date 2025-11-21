@@ -1,0 +1,22 @@
+main {
+  width: 100%;
+  min-height: calc(100vh - 60px);
+}
+
+@media (min-width: 768px) {
+  main {
+    min-height: calc(100vh - 80px);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}

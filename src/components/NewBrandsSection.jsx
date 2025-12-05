@@ -1,5 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import { keyframes } from '@mui/system';
+import { getImageUrl } from '../config/cloudinary';
 
 const marqueeRight = keyframes`
   0% {
@@ -22,83 +23,83 @@ const marqueeLeft = keyframes`
 const brands = [
   {
     name: "Victoria's Secret",
-    image: '/Victoria_s_Secret_Westfield_Stratford_City.jpg'
+    image: getImageUrl('/Victoria_s_Secret_Westfield_Stratford_City.jpg')
   },
   {
     name: 'H&M',
-    image: '/H and M.jpg'
+    image: getImageUrl('/H and M.jpg')
   },
   {
     name: 'Miniso',
-    image: '/minisoo.jpg'
+    image: getImageUrl('/minisoo.jpg')
   },
   {
     name: 'Sephora',
-    image: '/Sephora_2_1.jpg'
+    image: getImageUrl('/Sephora_2_1.jpg')
   },
   {
     name: 'Nike',
-    image: '/NIKE_-_WMoN.jpg'
+    image: getImageUrl('/NIKE_-_WMoN.jpg')
   },
   {
     name: 'Adidas',
-    image: '/ADIDAS.jpg'
+    image: getImageUrl('/ADIDAS.jpg')
   },
   {
     name: 'Zara',
-    image: '/zara-forum6257.jpg'
+    image: getImageUrl('/zara-forum6257.jpg')
   },
   {
     name: 'Aesop',
-    image: '/Aesop_Westfield_Stratford_City.jpg'
+    image: getImageUrl('/Aesop_Westfield_Stratford_City.jpg')
   },
   {
     name: 'Starbucks',
-    image: '/Starbucks.jpg'
+    image: getImageUrl('/Starbucks.jpg')
   },
   {
     name: 'Brand 1',
-    image: '/picture1.jpg'
+    image: getImageUrl('/picture1.jpg')
   },
   {
     name: 'Brand 23',
-    image: '/23.jpg'
+    image: getImageUrl('/23.jpg')
   },
   {
     name: 'Brand 346',
-    image: '/346.jpg'
+    image: getImageUrl('/346.jpg')
   },
   {
     name: 'Brand 365',
-    image: '/365.jpg'
+    image: getImageUrl('/365.jpg')
   },
   {
     name: 'Brand 584',
-    image: '/584.jpg'
+    image: getImageUrl('/584.jpg')
   },
   {
     name: 'Brand 745',
-    image: '/745.jpg'
+    image: getImageUrl('/745.jpg')
   },
   {
     name: 'Brand 4631',
-    image: '/4631.jpg'
+    image: getImageUrl('/4631.jpg')
   },
   {
     name: 'Brand 6485',
-    image: '/6485.jpg'
+    image: getImageUrl('/6485.jpg')
   },
   {
     name: 'DISCO7876',
-    image: '/DISCO7876.jpg'
+    image: getImageUrl('/DISCO7876.jpg')
   },
   {
     name: 'DISCO7901',
-    image: '/DISCO7901.jpg'
+    image: getImageUrl('/DISCO7901.jpg')
   },
   {
     name: 'DISCO8041',
-    image: '/DISCO8041.jpg'
+    image: getImageUrl('/DISCO8041.jpg')
   },
 ];
 

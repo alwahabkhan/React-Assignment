@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { AppBar, Toolbar, Button, IconButton, Box, useMediaQuery, useTheme } from '@mui/material';
 import { Public, AccountCircle } from '@mui/icons-material';
+import { getImageUrl } from '../config/cloudinary';
 
 const Header = () => {
   const [isTransparent, setIsTransparent] = useState(true);
@@ -69,7 +70,7 @@ const Header = () => {
         {(isSmallScreen || !shouldBeTransparent) && (
           <Box 
             component="img"
-            src='/Giga Mall_.png'
+            src={getImageUrl('/Giga Mall_.png')}
             alt="Giga Mall"
             sx={{ 
               height: { xs: '36px', sm: '44px', md: '56px', lg: '60px' },

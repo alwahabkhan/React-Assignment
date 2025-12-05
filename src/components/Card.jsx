@@ -1,5 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import { motion } from 'framer-motion';
+import { getImageUrl } from '../config/cloudinary';
 
 const Card = ({ 
   data, 
@@ -158,7 +159,7 @@ const Card = ({
                   }
                 }}
               >
-                <img src="/Giga Mall_.png" alt="Giga Mall Logo" />
+                <img src={getImageUrl("/Giga Mall_.png")} alt="Giga Mall Logo" />
               </Box>
             )}
           </>

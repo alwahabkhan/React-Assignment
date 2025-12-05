@@ -1,27 +1,28 @@
 import { useState, useEffect } from 'react';
 import { Box, Typography } from '@mui/material';
 import { Accessibility, LocationOn } from '@mui/icons-material';
+import { getImageUrl } from '../config/cloudinary';
 
 const Hero = () => {
   const slides = [
     {
-      image: '/4-WChodov-OK.jpg',
+      image: getImageUrl('/4-WChodov-OK.jpg'),
       location: 'Giga Mall First floor'
     },
     {
-      image: '/1-WL_inside-_2732_x_1436_rijsgy-OK.jpg',
+      image: getImageUrl('/1-WL_inside-_2732_x_1436_rijsgy-OK.jpg'),
       location: 'Giga Mall Second floor'
     },
     {
-      image: '/2-ES---WLaMaquinista_OK.jpg',
+      image: getImageUrl('/2-ES---WLaMaquinista_OK.jpg'),
       location: 'Giga Mall Third floor'
     },
     {
-      image: '/3-Mall-of-Scandinavia-OK.jpg',
+      image: getImageUrl('/3-Mall-of-Scandinavia-OK.jpg'),
       location: 'Giga Mall Fourth floor'
     },
     {
-      image: '/ZWestfield-WTC-OK.jpg',
+      image: getImageUrl('/ZWestfield-WTC-OK.jpg'),
       location: 'Giga Mall Fifth floor'
     }
   ];
@@ -95,8 +96,8 @@ const Hero = () => {
           fontFamily: '"High Summit", "Brush Script MT", cursive',
           fontStyle: 'normal',
           fontWeight: 400,
-          // color: 'rgb(255, 255, 255)',
-          color: '#D19F3B',
+          color: 'rgb(255, 255, 255)',
+          // color: '#D19F3B',
           fontSize: { xs: '2.4rem', sm: '3.4rem', md: '84px', lg: '94px', xl: '84px' },
           lineHeight: { xs: '1.2', sm: '1.25', md: '1.3', lg: '132px', xl: '132px' },
           textAlign: 'center',

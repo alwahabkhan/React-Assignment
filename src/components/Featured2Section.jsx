@@ -1,77 +1,78 @@
 import { useEffect, useState } from 'react';
 import { Box, Typography } from '@mui/material';
 import { keyframes } from '@mui/system';
+import { getImageUrl } from '../config/cloudinary';
 
 const featuredItems = [
   {
-    image: '/Sephora_2_1.jpg',
+    image: getImageUrl('/Sephora_2_1.jpg'),
     name: 'Sephora',
     description: 'The ultimate beauty playground featuring makeup, skincare, and fragrance icons.'
   },
   {
-    image: '/NIKE_-_WMoN.jpg',
+    image: getImageUrl('/NIKE_-_WMoN.jpg'),
     name: 'Nike',
     description: 'Performance meets style with the latest sneakers, sportswear, and innovations.'
   },
   {
-    image: '/ADIDAS.jpg',
+    image: getImageUrl('/ADIDAS.jpg'),
     name: 'Adidas',
     description: 'Sport-inspired streetwear and footwear designed for game changers.'
   },
   {
-    image: '/zara-forum6257.jpg',
+    image: getImageUrl('/zara-forum6257.jpg'),
     name: 'Zara',
     description: 'Runway-inspired collections, refreshed weekly, for modern everyday style.'
   },
   {
-    image: '/Aesop_Westfield_Stratford_City.jpg',
+    image: getImageUrl('/Aesop_Westfield_Stratford_City.jpg'),
     name: 'Aesop',
     description: 'Thoughtfully crafted skin, hair, and body care with a signature sensorial touch.'
   },
   {
-    image: '/Starbucks.jpg',
+    image: getImageUrl('/Starbucks.jpg'),
     name: 'Starbucks',
     description: 'Your favourite handcrafted beverages, from classic coffees to seasonal specials.'
   },
   {
     name: 'Brand 1',
-    image: '/picture1.jpg',
+    image: getImageUrl('/picture1.jpg'),
     description: 'Discover exceptional quality and style at Brand 1.'
   },
   {
     name: 'Brand 23',
-    image: '/23.jpg',
+    image: getImageUrl('/23.jpg'),
     description: 'Experience premium products and innovative designs.'
   },
 
   {
     name: 'Brand 346',
-    image: '/346.jpg',
+    image: getImageUrl('/346.jpg'),
     description: 'Elevate your lifestyle with our curated collection.'
   },
   {
     name: 'Brand 365',
-    image: '/365.jpg',
+    image: getImageUrl('/365.jpg'),
     description: 'Style that works for you, every day of the year.'
   },
   {
     name: 'Brand 584',
-    image: '/584.jpg',
+    image: getImageUrl('/584.jpg'),
     description: 'Contemporary designs for the modern shopper.'
   },
   {
     name: 'Brand 745',
-    image: '/745.jpg',
+    image: getImageUrl('/745.jpg'),
     description: 'Quality craftsmanship meets timeless appeal.'
   },
   {
     name: 'Brand 4631',
-    image: '/4631.jpg',
+    image: getImageUrl('/4631.jpg'),
     description: 'Innovative products that redefine your experience.'
   },
   {
     name: 'Brand 6485',
-    image: '/6485.jpg',
+    image: getImageUrl('/6485.jpg'),
     description: 'Discover trends that set you apart from the rest.'
   }
 ];
@@ -272,7 +273,7 @@ const Featured2Section = () => {
           >
             <Box
               component="img"
-              src="/Giga Mall_.png"
+              src={getImageUrl("/Giga Mall_.png")}
               alt="Giga Mall"
               sx={{
                 width: { xs: 36, sm: 48, md: 56, lg: 84 },

@@ -1,6 +1,7 @@
 import { Box } from '@mui/material';
 import { useState, useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
+import { getImageUrl } from '../config/cloudinary';
 
 const LandingVideo = () => {
   const [videoError, setVideoError] = useState(false);
@@ -87,7 +88,7 @@ const LandingVideo = () => {
             pointerEvents: 'none'
           }}
         >
-          <source src="/gigamallvideo.mp4" type="video/mp4" />
+          <source src={getImageUrl("/gigamallvideo.mp4")} type="video/mp4" />
           Your browser does not support the video tag.
         </motion.video>
       ) : (

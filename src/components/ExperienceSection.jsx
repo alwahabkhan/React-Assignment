@@ -1,6 +1,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { Box, Typography } from '@mui/material';
+import { getImageUrl } from '../config/cloudinary';
 
 const ExperienceSection = () => {
   const sectionRef = useRef(null);
@@ -10,13 +11,13 @@ const ExperienceSection = () => {
   const [animationCompleted, setAnimationCompleted] = useState(false);
 
   const images = [
-    { src: '/20241019_WestfieldDays-JoniIsraeli-053-SWR60051-retouche-OK.jpg', position: 'top-center' },
-    { src: '/Westfield_Days_2024_Tag-1_052_OK.jpg', position: 'top-right' },
-    { src: '/DSC05412Food_OK_1.jpg', position: 'middle-right' },
-    { src: '/c_Dragan_Dok_WF_DZ_0811-6445.jpg', position: 'bottom-right' },
-    { src: '/ASC_2024_3.jpg', position: 'bottom-center' },
-    { src: '/EU_US_-_Good_Festival.jpg', position: 'middle-left' },
-    { src: '/WESTFIELD_CENTURY_CITY_TAYLOR_SWIFT_2.jpg', position: 'top-left' }
+    { src: getImageUrl('/20241019_WestfieldDays-JoniIsraeli-053-SWR60051-retouche-OK.jpg'), position: 'top-center' },
+    { src: getImageUrl('/Westfield_Days_2024_Tag-1_052_OK.jpg'), position: 'top-right' },
+    { src: getImageUrl('/DSC05412Food_OK_1.jpg'), position: 'middle-right' },
+    { src: getImageUrl('/c_Dragan_Dok_WF_DZ_0811-6445.jpg'), position: 'bottom-right' },
+    { src: getImageUrl('/ASC_2024_3.jpg'), position: 'bottom-center' },
+    { src: getImageUrl('/EU_US_-_Good_Festival.jpg'), position: 'middle-left' },
+    { src: getImageUrl('/WESTFIELD_CENTURY_CITY_TAYLOR_SWIFT_2.jpg'), position: 'top-left' }
   ];
 
   useEffect(() => {
@@ -151,9 +152,9 @@ const ExperienceSection = () => {
             whiteSpace: 'pre-line'
           }}
         >
-          {`900M VISITORS,
-71 SHOPPING CENTRES,
-2 CITIES,
+          {`4M VISITORS,
+240 PLUS BRANDS CENTRES,
+A WORLD OF CHOICES,
 1 UNFORGETTABLE
 EXPERIENCE`}
         </Typography>

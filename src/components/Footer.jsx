@@ -1,6 +1,7 @@
 import { Box, Container, Grid, Typography, Link, IconButton, Collapse } from '@mui/material';
 import { KeyboardArrowUp, ChevronRight } from '@mui/icons-material';
 import { useState } from 'react';
+import { getImageUrl } from '../config/cloudinary';
 
 const Footer = () => {
   const [showMore, setShowMore] = useState(false);
@@ -94,7 +95,7 @@ const Footer = () => {
           <Box
             component="img"
             // src="/logo-westfield.svg"
-            src='/Giga Mall_.png'
+            src={getImageUrl('/Giga Mall_.png')}
             alt="Westfield"
             sx={{
               width: { xs: '200px', sm: '250px', md: '300px', lg: '600px' },
@@ -248,7 +249,7 @@ const Footer = () => {
               >
                 <Box
                   component="img"
-                  src="/AppStore_Badge_US_English.svg"
+                  src={getImageUrl("/AppStore_Badge_US_English.svg")}
                   alt="Download on the App Store"
                   sx={{
                     height: { xs: '40px', sm: '50px' },
@@ -272,7 +273,7 @@ const Footer = () => {
                 >
                   <Box
                     component="img"
-                    src="/GooglePlay_Badge_EN-US_English.svg"
+                    src={getImageUrl("/GooglePlay_Badge_EN-US_English.svg")}
                     alt="GET IT ON Google Play"
                     sx={{
                       height: { xs: '40px', sm: '50px' },
